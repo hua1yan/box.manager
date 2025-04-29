@@ -47,7 +47,7 @@ jobs:
           mv -f ./app/build/outputs/apk/release/*.apk ./app/build/outputs/apk/release/$APK
 
       - name: upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: ${{  success() }}
         with:
           name: b4r_manager
